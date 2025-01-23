@@ -1,11 +1,9 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 #include <algorithm>
 #define INF 987654321
 using namespace std;
 
-vector<pair<int,int>> v[401];
 int arr[401][401];
 
 int main(){
@@ -25,7 +23,6 @@ int main(){
     for(int i=0; i<E; i++){
         int a,b,c;
         cin>>a>>b>>c; // 출발노드, 도착노드, 가중치
-        v[a].push_back({b,c});
         arr[a][b]=c; 
     }
 
